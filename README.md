@@ -25,6 +25,9 @@ A robust REST API built with FastAPI that combines calculator functionality with
 
 ## 🚀 Installation
 
+<details>
+<summary>📥 Installation Steps</summary>
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/DevTroli/calculator-api.git
@@ -41,8 +44,12 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+</details>
 
 ## 💻 Usage
+
+<details>
+<summary>🔧 Getting Started</summary>
 
 1. Start the server:
 ```bash
@@ -53,10 +60,12 @@ python FastAPI_Rest.py
 - API Root: http://localhost:8000/
 - Interactive Docs: http://localhost:8000/docs
 - ReDoc Documentation: http://localhost:8000/redoc
+</details>
 
-## 🔌 API Endpoints
+## 🔌 API Documentation
 
-### Root Endpoint
+<details>
+<summary>📊 Root Endpoint</summary>
 
 | Attribute | Description |
 |-----------|-------------|
@@ -66,10 +75,12 @@ python FastAPI_Rest.py
 | Parameters | None |
 | Response | JSON with API metadata and endpoint listing |
 | Status Codes | `200`: Success |
+</details>
 
-### Calculator Operations
+<details>
+<summary>🧮 Calculator Operations</summary>
 
-#### Sum Endpoint
+### Sum Endpoint
 | Attribute | Description |
 |-----------|-------------|
 | Endpoint | `/calculator/sum/{a}/{b}` |
@@ -79,7 +90,7 @@ python FastAPI_Rest.py
 | Response | ```json { "result": float }``` |
 | Status Codes | `200`: Success <br> `400`: Invalid input |
 
-#### Subtraction Endpoint
+### Subtraction Endpoint
 | Attribute | Description |
 |-----------|-------------|
 | Endpoint | `/calculator/subtract/{a}/{b}` |
@@ -89,7 +100,7 @@ python FastAPI_Rest.py
 | Response | ```json { "result": float }``` |
 | Status Codes | `200`: Success <br> `400`: Invalid input |
 
-#### Division Endpoint
+### Division Endpoint
 | Attribute | Description |
 |-----------|-------------|
 | Endpoint | `/calculator/divide/{a}/{b}` |
@@ -98,10 +109,12 @@ python FastAPI_Rest.py
 | Parameters | `a` (float): Dividend <br> `b` (float): Divisor (cannot be zero) |
 | Response | ```json { "result": float }``` |
 | Status Codes | `200`: Success <br> `400`: Division by zero or invalid input |
+</details>
 
-### User Management
+<details>
+<summary>👥 User Management Endpoints</summary>
 
-#### Create User
+### Create User
 | Attribute | Description |
 |-----------|-------------|
 | Endpoint | `/users/{user_id}` |
@@ -112,7 +125,7 @@ python FastAPI_Rest.py
 | Response | ```json { "id": int, "name": "string" }``` |
 | Status Codes | `201`: Created <br> `400`: Invalid input |
 
-#### Get User
+### Get User
 | Attribute | Description |
 |-----------|-------------|
 | Endpoint | `/users/{user_id}` |
@@ -122,7 +135,7 @@ python FastAPI_Rest.py
 | Response | ```json { "id": int, "name": "string" }``` |
 | Status Codes | `200`: Success <br> `404`: User not found |
 
-#### Update User
+### Update User
 | Attribute | Description |
 |-----------|-------------|
 | Endpoint | `/users/{user_id}` |
@@ -133,7 +146,7 @@ python FastAPI_Rest.py
 | Response | ```json { "id": int, "name": "string" }``` |
 | Status Codes | `200`: Success <br> `404`: User not found <br> `400`: Invalid input |
 
-#### Delete User
+### Delete User
 | Attribute | Description |
 |-----------|-------------|
 | Endpoint | `/users/{user_id}` |
@@ -142,8 +155,10 @@ python FastAPI_Rest.py
 | Parameters | `user_id` (int): ID of user to delete |
 | Response | ```json { "message": "User successfully deleted" }``` |
 | Status Codes | `200`: Success <br> `404`: User not found |
+</details>
 
-### Common Response Codes
+<details>
+<summary>📋 Common Response Codes</summary>
 
 | Status Code | Description |
 |------------|-------------|
@@ -152,19 +167,32 @@ python FastAPI_Rest.py
 | `400` | Bad Request - Invalid input |
 | `404` | Not Found |
 | `500` | Internal Server Error |
+</details>
 
 ## 🧪 Testing
+
+<details>
+<summary>🔍 Running Tests</summary>
+
+Execute the test suite using pytest:
 ```bash
 pytest
 ```
+</details>
 
 ## 👥 Contributing
+
+<details>
+<summary>🤝 How to Contribute</summary>
+
 1. Fork the repository
 2. Create your feature branch (git checkout -b amazing-new-feature)
 3. Commit your changes (git commit -m '✨ Add amazing feature')
 4. Push to the branch (git push origin amazing-new-feature)
 5. Open a Pull Request
+
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+</details>
 
 ## 📬 Contact
 If you want to contact me you can reach me at pablotroli@outlook.com
