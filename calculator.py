@@ -31,7 +31,7 @@ class CalculatorUsers:
         """Initilize User data base"""
         self.User = {}
 
-    def create(self, id: int, nome: str) -> dict:
+    def create(self, id: int, name: str) -> dict:
         """
         Create a User
         Raise: if ID already exist
@@ -39,7 +39,7 @@ class CalculatorUsers:
         if id in self.User:
             raise ValueError("ID already exist")
 
-        User = {"id": id, "nome": nome}
+        User = {"id": id, "name": name}
         self.User[id] = User
         return User
 
@@ -49,7 +49,7 @@ class CalculatorUsers:
         Raise: if User is not found
         """
         if id not in self.User:
-            raise ValueError("User not found")
+            raise ValueError("User is not found")
         return self.User[id]
 
     def update(self, id: int, new_name: str) -> dict:
