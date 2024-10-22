@@ -1,15 +1,5 @@
 # 🧮 Calculator API with User Management
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🌟 Overview
 A robust REST API built with FastAPI that combines calculator functionality with user management. This API provides mathematical operations and CRUD operations for user data, all with comprehensive error handling and input validation.
 
